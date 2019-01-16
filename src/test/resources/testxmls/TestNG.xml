@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing" preserve-order="true">
+
+    <test name="First Test">
+        <classes>
+            <class name="org.stepdefs.SingleClass"/>
+        </classes>
+    </test>
+</suite>

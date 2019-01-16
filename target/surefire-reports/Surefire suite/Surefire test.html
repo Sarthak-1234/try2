@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 16 12:27:18 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>254 seconds (254306 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.stepdefs.RunnableClass.run_cukes()'><b>run_cukes</b><br>Test class: org.stepdefs.RunnableClass<br>Test method: Runs Cucumber Features<br/>
+<a href="#Output-452121674" onClick='toggleBox("Output-452121674", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-452121674" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-452121674">
+<div "featureFile">Feature File: HomePage.feature</div><br/>
+<div "feature">Feature: Check BrowserSite and navigation to other products</div><br/>
+<div "scenarioOutline">Scenario Outline: Check the product navigation through FADAVIS.COM</div><br/>
+<div "scenario">Scenario Outline: Check the product navigation through FADAVIS.COM</div><br/>
+<div "result">Given  Launch URL for Login (passed : 5s)</div><br/>
+<div "result">When  Login in the application with &quot;&lt;emailid&gt;&quot; and &quot;&lt;password&gt;&quot; (passed : 11s)</div><br/>
+<div "result">When  click on BrowserSite dropdown (passed : 0s)</div><br/>
+<div "result">And  click on KIA (passed : 0s)</div><br/>
+<div "result">Then  it should open the new tab with title KIA (passed : 10s)</div><br/>
+<div "featureFile">Feature File: Login.feature</div><br/>
+<div "feature">Feature: Check the Authenticity of the FADAVIS.COM website.</div><br/>
+<div "scenarioOutline">Scenario Outline: Check the authenticity using correct login credentials.</div><br/>
+<div "scenario">Scenario Outline: Check the authenticity using correct login credentials.</div><br/>
+<div "result">Given  Launch URL for Login (passed : 6s)</div><br/>
+<div "result">When  Login in the application with &quot;vandanasharma@qainfotech.com&quot; and &quot;password&quot; (passed : 4s)</div><br/>
+<div "result">When  click on BrowserSite dropdown (passed : 1s)</div><br/>
+<div "result">And  click on KIA (passed : 0s)</div><br/>
+<div "result">Then  it should open the new tab with title KIA (passed : 7s)</div><br/>
+<div "result">Given  Launch URL for Login (passed : 0s)</div><br/>
+<div "scenario">Scenario: Check the message displayed when incorrect email is used.</div><br/>
+<div "result">When  Click on Login&#x2F;Join button (passed : 8s)</div><br/>
+<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 4s)</div><br/>
+<div "result">And  Enter CorrectPassword &quot;&lt;password&gt;&quot; (passed : 1s)</div><br/>
+<div "result">And  Click on Login Button (passed : 0s)</div><br/>
+<div "scenarioOutline">Scenario Outline: Confirm the presence of Alert, when incorrect password is used.</div><br/>
+<div "scenario">Scenario Outline: Confirm the presence of Alert, when incorrect password is used.</div><br/>
+<div "result">Then  Login is Successfull. (passed : 8s)</div><br/>
+<div "result">Given  Launch URL for Login (passed : 5s)</div><br/>
+<div "result">When  Click on Login&#x2F;Join button (passed : 1s)</div><br/>
+<div "result">And  Enter CorrectEmail &quot;vandanasharma@qainfotech.com&quot; (passed : 0s)</div><br/>
+<div "result">And  Enter CorrectPassword &quot;password&quot; (passed : 2s)</div><br/>
+<div "result">And  Click on Login Button (passed : 0s)</div><br/>
+<div "featureFile">Feature File: TitleVerification.feature</div><br/>
+<div "feature">Feature: Test Fadavis.com</div><br/>
+<div "scenario">Scenario: Verification of FADAVIS.COM Title</div><br/>
+<div "result">Then  Login is Successfull. (passed : 8s)</div><br/>
+<div "result">Given  Launch URL for Login (passed : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>254</td>
+<td>org.stepdefs.RunnableClass@5c3bd550</td></tr>
+</table><p>
+</body>
+</html>
